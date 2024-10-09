@@ -88,6 +88,7 @@ function onFileChange(event) {
     image.src = url;
     image.onload = function() {
         ctx.drawImage(image, 0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
+        fileInput.value = null;
     };
 }
 
